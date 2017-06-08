@@ -16,3 +16,4 @@ if __name__ == '__main__':
 			if lib.endswith(".pretty"):
 				print("  (lib (name {})(type KiCad)(uri {})(options \"\")(descr \"\"))".format(lib[:-7], os.path.abspath(lib)), file=args["t"], flush=True)
 	print(")", file=args["t"], flush=True)
+	args["t"].close()
